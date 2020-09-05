@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{title}}</mat-card-title>
+        <mat-card-subtitle>A subtext</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://source.unsplash.com/n6hHcw23kFY/500x300" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            Just some text
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="cardLiked.emit()">LIKE</button>
+        <button mat-button>SHARE</button>
+    </mat-card-actions>
+</mat-card>

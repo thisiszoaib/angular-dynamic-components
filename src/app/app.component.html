@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+  Dynamic Components
+  <button mat-button [matMenuTriggerFor]="demoMenu">
+    Select Demo
+    <mat-icon>arrow_drop_down</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-menu #demoMenu="matMenu">
+  <button mat-menu-item routerLink="demo-one">
+    Method 1
+  </button>
+  <button mat-menu-item routerLink="demo-two">
+    Method 2
+  </button>
+</mat-menu>
+
+<div class="content">
+
+  <router-outlet></router-outlet>
+
+</div>
